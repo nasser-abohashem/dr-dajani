@@ -1,0 +1,312 @@
+https://dr-dajani.vercel.app/
+=================================
+ffmpeg -ss 00:01:45 -i "D:\audio\input.mp3" -c copy "D:\audio-new\output.mp3"
+ffmpeg -ss 00:01:16 -i "D:\audio\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الثاني حديث.mp3" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الثاني حديث.mp3"
+ffmpeg -ss 00:01:45 -i "D:\audio\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الاول حديث.mp3" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الاول حديث.mp3"
+ffmpeg -ss 00:01:00 -i "D:\audio\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الرابع حديث.mp3" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الرابع حديث.mp3"
+ffmpeg -ss 00:00:10 -i "D:\audio\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الخامس حديث.mp3" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الخامس حديث.mp3"
+ffmpeg -ss 00:02:58 -i "D:\audio\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس السادس حديث.mp3" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس السادس حديث.mp3"
+ffmpeg -ss 00:00:07 -i "D:\audio\نعمة الأمن ووجوب المحافظة عليها الأمن الفكري.mp3" -c copy "D:\audio-new\نعمة الأمن ووجوب المحافظة عليها الأمن الفكري.mp3"
+ffmpeg -ss 00:01:10 -i "D:\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الثالث حديث\input.mp4" -c copy "D:\audio-new\كونوا ربانيين 5 - شرح كتاب عمدة الأحكام - الشيخ الدكتور حمود بن محسن الدعجاني - الدرس الثالث حديث.mp4"
+ffmpeg -ss 00:01:10 -i "D:\audio\شرح عمدة الأحكام 3.mp4" -c copy "D:\audio-new\شرح عمدة الأحكام 3.mp4"
+ffmpeg -ss 00:00:08 -i "D:\audio\الأمن الفكري ضرورة شرعية ومجتمعية.mp4" -c copy "D:\audio-new\الأمن الفكري ضرورة شرعية ومجتمعية.mp4"
+ffmpeg -ss 00:00:08 -i "D:\audio\input.mp4" -c copy "D:\audio-new\output.mp4"
+تحويل ام بي فور إلى أم بي ثري
+ffmpeg -i "input.mp4" -vn -ar 44100 -ac 2 -b:a 192k "output.mp3"
+ffmpeg -i "فضل قيام الليل وصلاة الوتر المحاضرات والكلمات.mpeg" -ar 44100 -ac 2 -b:a 192k "فضل قيام الليل وصلاة الوتر المحاضرات والكلمات.mp3"
+ffmpeg -i "الأمن الفكري ضرورة شرعية ومجتمعية الأمن الفكري.mp4" -vn -ar 44100 -ac 2 -b:a 192k "الأمن الفكري ضرورة شرعية ومجتمعية الأمن الفكري.mp3"
+===========================================
+تمام! نقدر نعمل سكربت FFmpeg تلقائي يحول كل ملفات الفيديو أو الصوت في مجلدك إلى MP3، حتى لو كانت أسماؤها بالعربي أو فيها مسافات.
+
+استخدم الأمر التالي في Command Prompt في نفس المجلد الذي يحتوي الملفات:
+
+for %f in (*.mp4 *.mpeg *.mov *.avi) do ffmpeg -i "%f" -vn -ar 44100 -ac 2 -b:a 192k "%~nf.mp3"
+============================================
+cd D:\audio
+mkdir audio-new
+for %f in (*.mp4 *.mpeg *.mov *.avi *.m4a *.wav) do ffmpeg -i "%f" -vn -ar 44100 -ac 2 -b:a 192k -codec:a libmp3lame -write_xing 0 "audio-new\%~nf.mp3"
+
+
+
+vercel --prod
+كود تحديث المشروع على فيرسال
+========================
+موقع تخفيض حجم ملفات صوتي
+https://online-audio-converter.com/
+=================================
+اسم المستخدم
+node-express-Mongo
+ملمة المرور
+abohashem1965
+
+
+8vbJUpQ4GJXolBPS
+
+0.0.0.0/0
+
+==========================
+abohashem20465
+
+MASOCb303hU5xbIU
+=========================
+
+0.0.0.0/0
+
+
+
+رابط موجون
+https://cloud.mongodb.com/v2/68711dcd489598769b360f56#/overview
+
+اسم المستخدم
+express-Mongo
+ملمة المرور
+W5Y0UeUCymjoPKzj
+=
+
+0.0.0.0/0
+
+====================================
+اسم المستخدم
+prop
+الإيميل
+prop@haqweb.com
+كلمة المرور
+abohashem1965
+
+==============================
+اسم المستخدم
+prop
+كلمة المرور
+UaphbntmGlIPvAGN
+=====================
+
+شاشات الربط بين الموقع المحلي وموقع منجون
+https://cloud.mongodb.com/v2/6873753d00ede014e3126d61#/overview
+شاشة التأكد من الاتصال و>لك بالضغط على أوفر فيو تحت بروجكت 0 من القايمة الشمال
+https://cloud.mongodb.com/v2/6873753d00ede014e3126d61#/host/replicaSet/687376d79156e62b7c505bd3
+
+https://cloud.mongodb.com/v2/6873753d00ede014e3126d61#/overview?connectCluster=Cluster0
+
+https://cloud.mongodb.com/v2/6873753d00ede014e3126d61#/overview
+
+
+شاشة رؤية الداتا في ماي داتا 
+https://cloud.mongodb.com/v2/6873753d00ede014e3126d61#/metrics/replicaSet/687376d79156e62b7c505bd3/explorer/all-data/mydataas/find
+================================== من شاشة الإكربريس بنحصل على أكواد عمليات الجت والإرسال والتعديل والح>فيو
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+=======================================POST request
+app.post('/', (req, res) => {
+  res.send('Got a POST request')
+})
+
+===============================================
+app.put('/user', (req, res) => {
+  res.send('Got a PUT request at /user')
+})
+
+==============================================
+app.delete('/user', (req, res) => {
+  res.send('Got a DELETE request at /user')
+})
+
+===============================================
+أنواع البيانات التي يتم تصديرها واستيرادها في قاعدة البيانات مونجو
+https://mongoosejs.com/docs/guide.html
+==============================
+Defining your schema
+Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the shape of the documents within that collection.
+
+import mongoose from 'mongoose';
+const { Schema } = mongoose;
+
+const blogSchema = new Schema({
+  title: String, // String is shorthand for {type: String}
+  author: String,
+  body: String,
+  comments: [{ body: String, date: Date }],
+  date: { type: Date, default: Date.now },
+  hidden: Boolean,
+  meta: {
+    votes: Number,
+    favs: Number
+  }
+});
+====================================================================
+// راوت رئيسي يرسل ملف home.html
+app.post("/", (req, res) => {
+  // res.sendFile(__dirname + "/views/home.html");
+  console.log(req.body);
+  res.redirect ("/")
+});
+====================================تقدر تكت من خلاله أكواد جافا وك>لك هتمل===========
+ejs + إنتر
+يعطي
+<%  %>
+ejs
+مثال كود هتمل
+<%= mytitle %>
+مثال كود جافا
+==================================== لتحديث السيفر وجميع العلميات أوتوماتيك
+Auto refresh
+1-npm i livereload connect-livereload
+
+2-in app.js :
+npm i livereload connect-livereload
+لكن ضروري تستخدم ه>ه لأكواد في الآب جافا
+
+ 
+const path = require("path");
+const livereload = require("livereload");
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(path.join(__dirname, 'public'));
+ 
+ 
+const connectLivereload = require("connect-livereload");
+app.use(connectLivereload());
+ 
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
+
+
+3- in package.json :
+
+"scripts": {
+  "start": "node app.js",
+  "watch": "nodemon --ext *"
+}
+======================================
+
+<a href="/" class="nav-link text-white <%= currentPage === "index"? "active" : null %>" aria-current="page">
+
+<a href="/user/add.html" class="nav-link text-white <%= currentPage === "add"? "active" : null %>">
+===================================================
+اسكريبت تحويل ملفات جيسون إلى شيت جوجل
+function importJSON() {
+  const url = 'https://dr-dajani.vercel.app/data/books.json'; // حط هنا رابط ملف JSON بتاعك
+  const response = UrlFetchApp.fetch(url);
+  const json = JSON.parse(response.getContentText());
+  
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  sheet.clear(); // يمسح البيانات القديمة
+  
+  // يجيب أسماء الأعمدة من أول عنصر في JSON
+  const headers = Object.keys(json[0]);
+  sheet.appendRow(headers);
+  
+  // يضيف كل سجل في صف مستقل
+  json.forEach(item => {
+    const row = headers.map(header => item[header]);
+    sheet.appendRow(row);
+  });
+}
+===============================================================================
+رابط شاشة توفير مساحة من جوجل درايف
+https://one.google.com/storage/management?utm_source=drive&utm_medium=web&utm_campaign=AOS_UPLOAD_DIALOG&g1_landing_page=6
+======================================================
+https://sheetdb.io/
+https://sheetdb.io/app/apis
+https://sheetdb.io/api/v1/lxixkvof7myym
+https://sheetdb.io/api/v1/lxixkvof7myym
+
+
+
+https://console.cloud.google.com/welcome?inv=1&invt=Ab5L1g&project=notes-app-9ac7a
+
+https://console.cloud.google.com/storage/browser?inv=1&invt=Ab5L1g&project=notes-app-9ac7a&prefix=&forceOnBucketsSortingFiltering=true&bucketType=live
+
+
+
+https://drive.google.com/file/d/1JmqPlIVImQ-b3Vhol6o6mILedO-518zf/view?usp=sharing
+
+الخطوة 1: استخراج الـ File ID
+الـ File ID هو الجزء اللي بين file/d/ و /view، يعني هنا:
+
+نسخ
+تحرير
+1JmqPlIVImQ-b3Vhol6o6mILedO-518zf
+الخطوة 2: استخدم الرابط المباشر التالي:
+bash
+نسخ
+تحرير
+https://drive.google.com/uc?export=download&id=FILE_ID
+يعني تعوض FILE_ID باللي فوق، فيبقى الرابط المباشر:
+
+bash
+نسخ
+تحرير
+https://drive.google.com/uc?export=download&id=1JmqPlIVImQ-b3Vhol6o6mILedO-518zf
+
+
+الرابط القديمة
+https://drive.google.com/file/d/1JmqPlIVImQ-b3Vhol6o6mILedO-518zf/view?usp=sharing
+الأصلي بعد التعديل
+الجزء اللي على اليسار يكون ثابت في جميع الملفات
+والجزء اليمين بيستخرج من الرابط الأصلي
+https://drive.google.com/uc?export=download&id=1JmqPlIVImQ-b3Vhol6o6mILedO-518zf
+استخلاص رابط من جوجل شيت
+https://sheetdb.io/app/apis
+
+رابط مشاركة ملف الدعجاني
+https://docs.google.com/spreadsheets/d/1wjR4tge_svestDjBFHoPkLmrc0dXJpcAcdUZyNQVEw8/edit?usp=sharing
+
+الرابط المستخلص أو الآيه بي آي المستخلص من 
+https://sheetdb.io/api/v1/lxixkvof7myym
+
+شرح فضائل القرآن من صحيح البخاري 1-15
+ 
+ وقفة مع آية الكرسي أ.د حمود بن محسن الدعجاني
+ رابط صوتي
+ 
+===================
+سكريبت لإزالة الفارغ من الملفات الصوتية والضغط
+1️⃣ فتح نافذة CMD في مسار السكريبت
+
+إذا حفظت السكريبت في D:\convert-audio.bat:
+
+اضغط Win + R.
+
+اكتب:
+
+cmd
+
+
+واضغط Enter.
+
+في نافذة CMD اكتب المسار الكامل للسكريبت:
+
+D:\convert-audio.bat
+
+
+اضغط Enter وسيبدأ السكريبت في معالجة جميع الملفات في D:\audio ووضع النتائج في D:\audio-new.
+============================
+==============================ملفات البث المباشر ===================
+يعني الحين انت عملت كام ملف في موضوع البث
+قال ChatGPT:
+
+حتى الآن الفكرة مقسمة إلى ثلاثة ملفات، لكن عمليًا هي ملفات قليلة جدًا وواضحة:
+
+1-            components/LiveStream.js
+
+هذا يحتوي على الكود المسؤول عن عرض البث المباشر أو رسالة “لا يوجد بث مباشر حاليًا”.
+
+2-             pages/live.js
+
+3-             public/data/live.json
+صفحة الموقع الخاصة بالبث المباشر، تستدعي LiveStream.jsx.
+
+هذا هو الرابط اللي تحطه في الـNavbar.
+
+4-          components/Navbar.jsx (أو أي ملف موجود لديك للنافبار)
+
+رابط موقع الجزيرة الإخباري
+"url": "https://www.youtube.com/embed/live_stream?channel=UCfiwzLy-8yKzIbsmZTzxDgw"
+==============================================================
+رابط موقع  تغيير رابط البث المباشر من قاعدة مونجو
+https://cloud.mongodb.com/v2/687a5a54cb6c0a55b7f71928#/metrics/replicaSet/687a5a8f4171a01d54ca7291/explorer/wesam-nursery/live/find
+رابط قناة السعودية الأولى
+https://aloula.sba.sa/ar/live/saudiatv

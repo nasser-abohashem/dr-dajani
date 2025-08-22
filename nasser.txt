@@ -5,6 +5,9 @@ https://dr-dajani.vercel.app/
 ربط اليوزر نيم واسم المستودع للمشروع في جتب هب
 git remote set-url origin https://github.com/nasser-abohashem/dr-dajani.git
 
+رابط المشروع على جت هب
+https://github.com/nasser-abohashem/dr-dajani
+Abohashem1965@
 =================================
 تمام ✌️، دي نسخة مختصرة جدًا لأوامر اليومي عشان كل تعديل في المشروع يروح على GitHub وVercel بأمر واحد:
 
